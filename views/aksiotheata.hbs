@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ePatras</title>
+
+  <link rel="stylesheet" href="./css/aksiotheata.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="./scripts/arxiki_script.js"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-md bg-none navbar-light fixed-top" id="navbar">
+        <a class="navbar-brand " href="http://localhost:8080" style="font-size: 30px;">e-patras</a>
+        <button id="collapseButton" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+                <ul class="navbar-nav mx-auto" >
+                    <li class="nav-item active" >
+                        <a class="nav-link" href="http://localhost:8080">Αρχική <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://localhost:8080/carnival">Καρναβάλι</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Αξιοθέατα
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            
+                            <a class="dropdown-item" href="http://localhost:8080/agios_andreas">Άγιος Ανδρέας</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/apollon">Απόλλων </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/mouseio">Αρχαιολογικό Μουσείο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/arxaio_wdeio">Αρχαίο Ωδείο</a>
+                             <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"  href="http://localhost:8080/achaia_clauss">Αχάϊα Κλάους</a>
+                            <div class="dropdown-divider"></div>
+                             <a class="dropdown-item" href="http://localhost:8080/gefura">Γέφυρα Ρίου-Αντιρρίου</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/kastro_patras">Κάστρο της Πάτρας</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/kastro_riou">Κάστρο του Ρίου</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/udragwgeio">Ρωμαικό Υδραγωγείο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/faros">Φάρος</a>
+                           
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Προτάσεις 
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://localhost:8080/gluko">Γλυκό</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/diamonh">Διαμονή</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/kafes">Καφέ</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/poto">Ποτό</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/faghto">Φαγητό</a>
+                            
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Τρόποι πρόσβασης
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://localhost:8080/autokinhto">Με αυτοκίνητο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/boatmenu">Με πλοίο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/trainmenu">Με τρένο</a>
+                            
+                        </div>
+                    </li>
+
+
+                       <li  class=" first-hide nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-plus-square-o">&nbsp;</i>Εγγραφή
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://localhost:8080/sign-up">Εγγραφή για χρήστες</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/sign-up-owners">Εγγραφή για ιδιοκτήτες</a>
+                            
+                        </div>
+                    </li>
+
+
+
+                    <li class=" second-hide nav-item active">
+                        <a class="nav-link" href="http://localhost:8080/login"><i class="fa fa-sign-in">&nbsp; </i>Σύνδεση <span class="sr-only">(current)</span></a>
+                    </li>
+
+                   
+                </ul>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div id="languageButton" class="buttons-hide    btn-group navbar-nav" role="group" aria-label="Basic example">
+                 <button type="button" style="color:rgb(63, 150, 179)" class="username-hide btn btn-outline-secondary "disabled>{{username}}</button>
+                <button type="button" class="btn btn-outline-secondary "><a style="text-decoration:none;color:black; " href="http://localhost:8080/logout"><i class="fa fa-sign-out">&nbsp; </i>{{logout}}</a></button>
+              
+              </div>
+            
+        </div>
+        
+    </nav>
+     
+     
+  
+  <header class="py-5 bg-image-full" style="background-image: url('images/patra2.jpg');height:54%; ">
+      <div class="logo">
+          <img class="img-fluid d-block mx-auto" src="images/logowhite.png" id="logo" alt="" height="250" width="250" style="margin-top:30px;">
+      </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <br>
+     <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+       <ol class="carousel-indicators">
+         <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+         <li data-target="#carousel-example-2" data-slide-to="1"></li>
+         <li data-target="#carousel-example-2" data-slide-to="2"></li>
+       </ol>
+        {{#each data}}
+       <div class="carousel-inner" role="listbox">
+         <div class="carousel-item active">
+           <div class="view">
+             <img class="d-block w-100" src={{image1}} alt="First slide">
+             <div class="mask rgba-black-light"></div>
+           </div>
+           <div class="carousel-caption">
+             <h1 class="h1-responsive">{{title}} </h1>
+           </div>
+         </div>
+         <div class="carousel-item">
+           <div class="view">
+             <img class="d-block w-100" src={{image2}} alt="Second slide">
+             <div class="mask rgba-black-light"></div>
+           </div>
+           <div class="carousel-caption">
+             <h1 class="h1-responsive">{{title}}</h1>
+           </div>
+         </div>
+         <div class="carousel-item">
+           <div class="view">
+             <img class="d-block w-100" src={{image3}} alt="Third slide">
+             <div class="mask rgba-black-light"></div>
+           </div>
+           <div class="carousel-caption">
+             <h1 class="h1-responsive">{{title}} </h1>
+           </div>
+         </div>
+       </div>
+       <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+       </a>
+       <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+       </a>
+     </div>
+   </div>
+ </div>
+ <br>
+
+     <div class="row">
+       <div class="col">
+         <div class="card text-center">
+           
+           <div class="card-body text" style="  background-image:white;">
+              <h5 class="card-title text-title "> </h5>
+            
+              <div class="data" >
+                <h4>{{title}}</h4>
+                <p style="text-align: justify;"> {{info}}</p>
+              </div>
+              <div class="media_sight">
+                <div class="row" id="media_sight">
+                  <div class="col">
+                    <h4>Χάρτης</h4>
+                    <iframe src={{map}} frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                  <div class="col">
+                    <h4>Βίντεο</h4>
+                    <iframe  src={{video}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+           {{/each}}
+            
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+    
+  <section class="py-5 bg-image-full" style="background-image: url('images/background.jpg');height:10%;">
+  </section>
+
+ <footer id="footer" class="page-footer font-small" style="background-color: #dbdbdb;">
+
+        <div style="background-color: #c7c8ce;">
+            <div class="container">
+
+            <div class="row py-4 d-flex align-items-center">
+
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0">Θες να μάθεις περισσότερα; Ακολούθησε μας με ένα click!</h6>
+                </div>
+
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                <a class="fb-ic">
+                    <i class="fa fa-facebook-f white-text mr-4"> </i>
+                </a>
+                <a class="tw-ic" href="https://twitter.com/eceupatras" style="color:black">
+                    <i class="fa fa-twitter white-text mr-4"> </i>
+                </a>
+                <a class="li-ic" href="https://www.linkedin.com/in/upatrasece" style="color:black">
+                    <i  class="fa fa-linkedin white-text mr-4"> </i>
+                </a>
+                <a class="ins-ic">
+                    <i class="fa fa-instagram white-text"> </i>
+                </a>
+
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+        <div class="container pt-5 border-bottom " >
+            <div class="row">
+                <div class="col " style="bottom:100px;left:0px;">
+                    <svg class="img-fluid">
+                        <g> <img width="100px" src="images/logoblack.png">  </g>
+
+                    </svg>
+                </div>
+                       
+                <div class="col-6">
+                    <h5 class="mb-4 font-weight-bold text-uppercase">Σχετικά με εμάς</h5>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <h6 class="text-uppercase font-weight-bold">e-patras<br></h6>
+                    <p>Εδώ μπορείς να βρεις όλες τις πληροφορίες που χρειάζεσαι για την Πάτρα αλλά και να αλληλεπιδράσεις με τους άλλους χρήστες!
+                        Μας νοιάζει η άποψη σου, μοιράσου τη!
+                    </p>
+
+                </div>
+                <div class="col">
+                    <h5 class="mb-4 font-weight-bold text-uppercase">Επικοινωνία</h5>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                    <ul class="list-group">
+                        <p>
+                        <i class="fa fa-home mr-3"></i> Πανεπιστημιούπολη Πατρών</p>
+                        <p>
+                        <i class="fa fa-envelope mr-3"></i> up1053586@upatras.gr <br></p>
+                        <p>
+                        <i class="fa fa-phone mr-3"></i> 261 099 6492</p>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    
+    <script src="scripts/hide_login_sign-up.js"></script>
+
+</body>
+
+
+
+
+</html>

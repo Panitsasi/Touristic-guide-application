@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <title>ePatras</title>
+
+  <link href="./css/login.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,800&family=Roboto:wght@700&family=Tinos&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Tinos&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+ 
+
+  <div class="bg-image" style='background-image: url("images/background.jpg"); height: 100%; background-position: center;background-repeat: no-repeat;background-size: cover;'>
+ 
+   <nav class="navbar navbar-expand-md bg-none navbar-light fixed-top" id="navbar">
+        <a class="navbar-brand " href="http://localhost:8080" style="font-size: 30px;">e-patras</a>
+        <button id="collapseButton" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+                <ul class="navbar-nav mx-auto" >
+                    <li class="nav-item active" >
+                        <a class="nav-link" href="http://localhost:8080">Αρχική <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://localhost:8080/carnival">Καρναβάλι</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Αξιοθέατα
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            
+                            <a class="dropdown-item" href="http://localhost:8080/agios_andreas">Άγιος Ανδρέας</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/apollon">Απόλλων </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/mouseio">Αρχαιολογικό Μουσείο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/arxaio_wdeio">Αρχαίο Ωδείο</a>
+                             <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"  href="http://localhost:8080/achaia_clauss">Αχάϊα Κλάους</a>
+                            <div class="dropdown-divider"></div>
+                             <a class="dropdown-item" href="http://localhost:8080/gefura">Γέφυρα Ρίου-Αντιρρίου</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/kastro_patras">Κάστρο της Πάτρας</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/kastro_riou">Κάστρο του Ρίου</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/udragwgeio">Ρωμαικό Υδραγωγείο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/faros">Φάρος</a>
+                           
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Προτάσεις 
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://localhost:8080/gluko">Γλυκό</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/diamonh">Διαμονή</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/kafes">Καφέ</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/poto">Ποτό</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/faghto">Φαγητό</a>
+                            
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Τρόποι πρόσβασης
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://localhost:8080/autokinhto">Με αυτοκίνητο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/boatmenu">Με πλοίο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/trainmenu">Με τρένο</a>
+                            
+                        </div>
+                    </li>
+
+
+                       <li  class=" first-hide nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-plus-square-o">&nbsp;</i>Εγγραφή
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://localhost:8080/sign-up">Εγγραφή για χρήστες</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/sign-up-owners">Εγγραφή για ιδιοκτήτες</a>
+                            
+                        </div>
+                    </li>
+
+
+
+                    <li class=" second-hide nav-item active">
+                        <a class="nav-link" href="http://localhost:8080/login"><i class="fa fa-sign-in">&nbsp; </i>Σύνδεση <span class="sr-only">(current)</span></a>
+                    </li>
+
+                   
+                </ul>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div id="languageButton" class="buttons-hide    btn-group navbar-nav" role="group" aria-label="Basic example">
+                 <button type="button" style="color:rgb(63, 150, 179)" class="username-hide btn btn-outline-secondary "disabled>{{username}}</button>
+                <button type="button" class="btn btn-outline-secondary "><a style="text-decoration:none;color:black; " href="http://localhost:8080/logout"><i class="fa fa-sign-out">&nbsp; </i>{{logout}}</a></button>
+              
+              </div>
+            
+        </div>
+        
+    </nav>
+     
+     
+     
+
+    <div class="container h-100 "> 
+      <div class="d-flex justify-content-center h-100">
+        <div class="user_card">
+          <div class="d-flex justify-content-center">
+            <div class="brand_logo_container">
+              <img src="images/logowhite.png" class="brand_logo" alt="Logo">
+            </div>
+          </div>
+          <div class="d-flex justify-content-center form_container">
+            <form action="http://localhost:8080/login" method="POST">
+              <div class="input-group mb-3 was-validated">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-user"></i></span>
+                </div>
+                <input type="text" name="username" class="form-control input_user"  placeholder="Όνομα χρήστη" required>
+                <div class="valid-feedback">Έγκυρο.</div>
+                <div class="invalid-feedback">Παρακαλώ συμπληρώστε το όνομα χρήστη.</div>
+              </div>
+              <div class="input-group mb-2 was-validated">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-key"></i></span>
+                </div>
+                <input type="password" name="password" class="form-control input_pass" value="" placeholder="Κωδικός" required>
+                <div class="valid-feedback">Έγκυρο.</div>
+                <div class="invalid-feedback">Παρακαλώ συμπληρώστε τον κωδικό σας.</div>
+       
+              </div>
+             
+                <div class="d-flex justify-content-center mt-3 login_container">
+            <button type="submit"  class="btn login_btn">Σύνδεση</button>
+            </div>
+            </form>
+          </div>
+
+          <div class="mt-4">
+            <div class="d-flex justify-content-center links">
+              Δεν έχεις λογαριασμό; 
+              <a href="./sign-up" class="ml-2" style="color: black;">Κάνε εγγραφή!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+</div>
+<script src="scripts/hide_login_sign-up.js"></script>
+<script src="./scripts/arxiki_script.js"></script>
+</body>
+
+</html>

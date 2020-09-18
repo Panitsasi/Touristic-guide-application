@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <title>ePatras</title>
+
+
+  <link href="./css/arxiki_style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,800&family=Roboto:wght@700&family=Tinos&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Tinos&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="./scripts/arxiki_script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-none navbar-light fixed-top" id="navbar">
+        <a class="navbar-brand " href="http://localhost:8080" style="font-size: 30px;">e-patras</a>
+        <button id="collapseButton" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+                <ul class="navbar-nav mx-auto" >
+                    <li class="nav-item active" >
+                        <a class="nav-link" href="/">Αρχική <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/carnival">Καρναβάλι</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Αξιοθέατα
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            
+                            <a class="dropdown-item" href="http://localhost:8080/agios_andreas">Άγιος Ανδρέας</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/apollon">Απόλλων </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/mouseio">Αρχαιολογικό Μουσείο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/arxaio_wdeio">Αρχαίο Ωδείο</a>
+                             <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"  href="http://localhost:8080/achaia_clauss">Αχάϊα Κλάους</a>
+                            <div class="dropdown-divider"></div>
+                             <a class="dropdown-item" href="http://localhost:8080/gefura">Γέφυρα Ρίου-Αντιρρίου</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/kastro_patras">Κάστρο της Πάτρας</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/kastro_riou">Κάστρο του Ρίου</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/udragwgeio">Ρωμαικό Υδραγωγείο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/faros">Φάρος</a>
+                           
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Προτάσεις 
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://localhost:8080/gluko">Γλυκό</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/diamonh">Διαμονή</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/kafes">Καφέ</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/poto">Ποτό</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/faghto">Φαγητό</a>
+                            
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Τρόποι πρόσβασης
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://localhost:8080/autokinhto">Με αυτοκίνητο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/boatmenu">Με πλοίο</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/trainmenu">Με τρένο</a>
+                            
+                        </div>
+                    </li>
+
+
+                       <li  class=" first-hide nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-plus-square-o">&nbsp;</i>Εγγραφή
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://localhost:8080/sign-up">Εγγραφή για χρήστες</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost:8080/sign-up-owners">Εγγραφή για ιδιοκτήτες</a>
+                            
+                        </div>
+                    </li>
+
+
+
+                    <li class=" second-hide nav-item active">
+                        <a class="nav-link" href="http://localhost:8080/login"><i class="fa fa-sign-in">&nbsp; </i>Σύνδεση <span class="sr-only">(current)</span></a>
+                    </li>
+
+                   
+                </ul>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div id="languageButton" class="buttons-hide    btn-group navbar-nav" role="group" aria-label="Basic example">
+                 <button type="button" style="color:rgb(63, 150, 179)" class="username-hide btn btn-outline-secondary "disabled>{{username}}</button>
+                <button type="button" class="btn btn-outline-secondary "><a style="text-decoration:none;color:black; " href="http://localhost:8080/logout"><i class="fa fa-sign-out">&nbsp; </i>{{logout}}</a></button>
+              
+              </div>
+            
+        </div>
+        
+    </nav>
+     
+    
+
+    <header class="py-5 bg-image-full" id="inside" style="background-image: url('images/patra2.jpg');height:70%; ">
+        <div class="logo " >
+            <img class="img-fluid d-block mx-auto" src="images/logowhite.png" id="logo" alt="" height="350" width="350" style="margin-top:30px;">
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+        <h1>Τουριστικός Οδηγός Πάτρας</h1>
+        <p class="lead">Πάτρα. Η τρίτη μεγαλύτερη πόλη στην Ελλάδα και πρωτεύουσα του νομού Αχαϊας.</p>
+        <p>Η Πάτρα βρίσκεται στην Πελοπόννησο και διοικητικά ανήκει στην Περιφέρεια Δυτικής
+            Ελλάδος. Είναι γνωστή για τις φυσικές ομορφιές της και αποτελεί πύλη προς την δύση χάριν
+            στην γεωγραφική της θέση και κυρίως λόγω του λιμανιού της, το οποίο συνδέει την χώρα με
+            πολλά λιμάνια της Ιταλίας. <br><br>Φημίζεται για το διάσημο καρναβάλι της, τους έντονους ρυθμούς διασκέδασης που προσφέρει,
+            αλλά και σημαντικούς πολιτιστικούς προορισμούς και αναζητήσεις.</p>
+        </div>
+    </section>
+
+    <section class="py-5 bg-image-full" style="background-image: url('images/patras3.jpg');height:40%;">
+    </section>
+
+  
+    <section class="py-5">
+        <div class="container">
+        <h1>Ανακαλύψτε τη ζωή της πόλης</h1>
+        <p class="lead">Μην ψάχνεις αλλού. Βρες εδώ τα πάντα για την Πάτρα.</p>
+        <p>
+            Από αξιοθέατα, προτάσεις για βόλτα, έως και εκδηλώσεις το μόνο που μένει είναι το πώς θα έρθεις! 
+            Αλλά μην ανησυχείς θα σου πούμε όσα χρειάζονται.
+        </p> 
+        <br>
+        <h2>Προτάσεις για.. </h2>
+        </div>
+    </section>
+
+    <section class="py-5 bg-image-full" style="background-image: url('images/background.jpg');height:10%;">
+    </section>
+
+    <div class="container">
+        <div class="card-deck" >
+            <div class="card img-fluid" style="width:300px; height:300px; ">
+                <img class="card-img-top" src="images/coffee.jpeg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                  <h4 class="card-title">Καφέ</h4>
+                  <p class="card-text">Όλοι ξέρουμε ότι ο καφές δεν είναι απλή υπόθεση, αλλά τρόπος ζωής. 
+                    Η Πάτρα, πιστή στο ρητό αυτό, στεγάζει πολλές καφετέριες σε κάθε γωνιά της πόλης. 
+                    Από εσάς το μόνο που μένει είναι να τις ανακαλύψετε.</p>
+                  <a href="http://localhost:8080/kafes" class="btn btn-primary">Δείτε περισσότερα..</a>
+                </div>
+            </div>
+            <div class="card img-fluid" style="width:300px; height:300px;">
+                <img class="card-img-top" src="images/food.jpg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                <h4 class="card-title">Φαγητό</h4>
+                <p class="card-text">Μπορείς να βρεις μεγάλη ποικιλία εστιατορίων στην Πάτρα,
+                    από το κέντρο μέχρι την πλατεία Τριων Ναυάρχων κάτω από τα Ψηλά Αλώνια, 
+                    και προς την περιοχή του Ρίου, ή στα Βραχναίικα.</p>
+                <a href="http://localhost:8080/faghto" class="btn btn-primary">Δείτε περισσότερα..</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card img-fluid" style="width:300px; height:300px;">
+                <img class="card-img-top" src="images/dessert.jpeg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Γλυκό</h4>
+                    <p class="card-text"> Στην Πάτρα μπορείτε να βρείτε αρκετά ζαχαροπλαστεία. Άλλα εξειδικεύονται στην παραγωγή παγωτού και άλλα προσφέρουν 
+                        εναλλακτικές και μοντέρνες γεύσεις, που σε καλούν να τις δοκιμάσεις.</p>
+                    <a href="http://localhost:8080/gluko" class="btn btn-primary">Δείτε περισσότερα..</a>
+                </div>
+            </div>
+            <div class="card img-fluid" style="width:300px; height:300px;">
+                <img class="card-img-top" src="images/poto.jpg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Ποτό</h4>
+                    <p class="card-text">Πληθώρα από bar, μπυραρίες/pubs και 
+                        μεζεδοπωλεία βρίσκονται εντός και εκτός κέντρου πόλης, πολλά από τα οποία βρίσκονται επί
+                        των πεζοδρόμων και πλατειών της πόλης.</p>
+                    <a href="http://localhost:8080/poto" class="btn btn-primary">Δείτε περισσότερα..</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <section class="py-5 bg-image-full" style="background-image: url('images/background.jpg');height:10%;">
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h1>Θα θέλατε να έρθετε;</h1>
+            <p class="lead">Εδώ θα βρείτε το πώς και πού θα μείνετε.</p>
+           
+            <br>
+            <h2>Προτάσεις για.. </h2>
+        </div>
+    </section>
+    <section class="py-5 bg-image-full" style="background-image: url('images/background.jpg');height:10%;">
+    </section>
+
+    <div class="container">
+        <div class="card-deck">
+            <div class="card img-fluid" style="width:300px; height:300px;">
+                <img class="card-img-top" src="images/hotel2.jpg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Ξενοδοχεία</h4>
+                    <p class="card-text"> </p>
+                    <a href="http://localhost:8080/diamonh" class="btn btn-primary">Δείτε περισσότερα..</a>
+                </div>
+            </div>
+            <div class="card img-fluid" style="width:300px; height:300px;">
+                <img class="card-img-top" src="images/port_patras.jpg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Τρόποι πρόσβασης με πλοίο</h4>
+                    <p class="card-text"></p>
+                    <a href="http://localhost:8080/boatmenu" class="btn btn-primary">Δείτε περισσότερα..</a>
+                </div>
+            </div>
+            <div class="card img-fluid" style="width:300px; height:300px;">
+                <img class="card-img-top" src="images/train_patras.jpg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Τρόποι πρόσβασης με τρένο</h4>
+                    <p class="card-text"></p>
+                    <a href="http://localhost:8080/trainmenu" class="btn btn-primary">Δείτε περισσότερα..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5 bg-image-full" style="background-image: url('images/background.jpg');height:10%;">
+    </section>
+
+
+    <footer id="footer" class="page-footer font-small" style="background-color: #dbdbdb;">
+
+        <div style="background-color: #c7c8ce;">
+            <div class="container">
+
+            <div class="row py-4 d-flex align-items-center">
+
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0">Θες να μάθεις περισσότερα; Ακολούθησε μας με ένα click!</h6>
+                </div>
+
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                <a class="fb-ic">
+                    <i class="fa fa-facebook-f white-text mr-4"> </i>
+                </a>
+                <a class="tw-ic" href="https://twitter.com/eceupatras" style="color:black">
+                    <i class="fa fa-twitter white-text mr-4"> </i>
+                </a>
+                <a class="li-ic" href="https://www.linkedin.com/in/upatrasece" style="color:black">
+                    <i  class="fa fa-linkedin white-text mr-4"> </i>
+                </a>
+                <a class="ins-ic">
+                    <i class="fa fa-instagram white-text"> </i>
+                </a>
+
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+        <div class="container pt-5 border-bottom " >
+            <div class="row">
+                <div class="col " style="bottom:100px;left:0px;">
+                    <svg class="img-fluid">
+                        <g> <img width="100px" src="images/logoblack.png">  </g>
+
+                    </svg>
+                </div>
+                       
+                <div class="col-6">
+                    <h5 class="mb-4 font-weight-bold text-uppercase">Σχετικά με εμάς</h5>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <h6 class="text-uppercase font-weight-bold">e-patras<br></h6>
+                    <p>Εδώ μπορείς να βρεις όλες τις πληροφορίες που χρειάζεσαι για την Πάτρα αλλά και να αλληλεπιδράσεις με τους άλλους χρήστες!
+                        Μας νοιάζει η άποψη σου, μοιράσου τη!
+                    </p>
+
+                </div>
+                <div class="col">
+                    <h5 class="mb-4 font-weight-bold text-uppercase">Επικοινωνία</h5>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                    <ul class="list-group">
+                        <p>
+                        <i class="fa fa-home mr-3"></i> Πανεπιστημιούπολη Πατρών</p>
+                        <p>
+                        <i class="fa fa-envelope mr-3"></i> up1053586@upatras.gr <br></p>
+                        <p>
+                        <i class="fa fa-phone mr-3"></i> 261 099 6492</p>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="scripts/hide_login_sign-up.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+body{
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+ 
+ 
+     .title{
+       text-align: center;
+     }
+ 
+ 
+   h1{
+     font-family: 'Alegreya', serif;
+     font-size: 3.5em;
+   
+   }
+ 
+ 
+  
+ 
+ 
+   img{
+ 
+         width: 100%;
+         height: auto;
+   }
+ 
+ 
+ 
+ 
+   .iframe-wrapper{
+     display: flex;
+     padding-left:1em;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+     
+   }
+ 
+ 
+   .frame {
+     background-color: black;
+ 
+   }
+ 
+   iframe{
+     width: 60vw;
+     height: 38vh;
+   }
+ 
+ 
+   .description{
+     font-family: 'Roboto', sans-serif;
+     font-size: 1.2em;
+     color:rgba(0, 0, 0, 0.9);
+   }
+ 
+ 
+   .info{
+     font-size: 1.1em;
+     font-family: 'Roboto', sans-serif;
+     color:rgba(0, 0, 0, 0.8);
+   }
+ 
+   p{
+     font-size: 1.5em;
+     font-family: 'Tinos', serif;
+     text-align: justify;
+   }
+ 
+   .video-title{
+     text-align: center;
+     font-family: 'Roboto', sans-serif;
+     font-size: 1.5em;
+     color:rgba(4, 18, 80, 0.9);
+   }
+ 
+   .line{
+     border: 1px solid rgba(4, 18, 80, 0.9); 
+     border-style: dashed;
+     
+ 
+   }
+ 
+   .box{
+     border: 1.5px solid rgba(7, 77, 180, 0.8);
+     box-shadow: aqua;
+   }
+ 
+   .table2 {
+     display:none ; 
+   }
+ 
+   table{
+       border: 0.1em solid rgb(8, 4, 255) ;
+       margin:0 auto ; 
+       border-collapse: collapse;
+       height:25vh;
+       width: 58vw;
+      
+       
+ 
+       
+ 
+   }
+   table tr {
+       border: 0.1em solid black ;
+       border-collapse: collapse;
+   }
+ 
+   table td {
+       
+       padding:0.2em ; 
+       color:black; 
+       font-size: 1.5em;
+       text-align:start ;
+     
+ 
+   }
+ 
+ 
+   .kathetos {
+       border-right:0.1em solid white  ;
+       font-weight: bold;
+   }
+ 
+ 
+   table tr:nth-child(even){
+       background-color: rgba(255, 255, 255, 0.986);
+   }
+ 
+   table tr:nth-child(odd){
+       background-color: rgba(180, 180, 180, 0.6);
+   }
+ 
+ 
+   .title{
+       font-weight: bold;
+       font-size: 1.8em;
+   }
+ 
+ 
+   .wrap {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+    
+   
+   }
+ 
+   
+ 
+ 
+   @media only screen and (max-width: 769px) {
+ 
+         .table1{
+           display:none ; 
+         }
+         .table2{
+           display: table;
+         }
+ 
+         table{
+           border: 0.1em solid rgb(8, 4, 255) ;
+           margin:0 auto ; 
+           border-collapse: collapse;
+           height:25vh;
+           
+           
+ 
+           
+ 
+       }
+       table tr {
+         padding:0.2em;
+           border: 0.1em solid black ;
+           border-collapse: collapse;
+       }
+ 
+       table td {
+         
+       
+           color:black; 
+           font-size: 1.5em;
+           text-align:center ;
+         
+ 
+       }
+ 
+ 
+       .kathetos {
+           border-right:0.1em solid black  ;
+           font-weight: bold;
+       }
+ 
+ 
+       table tr:nth-child(even){
+         background-color: rgba(255, 255, 255, 0.986);
+     }
+ 
+     table tr:nth-child(odd){
+         background-color: rgba(180, 180, 180, 0.6);
+     }
+ 
+ 
+   }

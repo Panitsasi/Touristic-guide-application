@@ -1,0 +1,36 @@
+
+  .top-nav-collapse {
+    background-color: #a1a7cf !important;
+  }
+  
+  .navbar:not(.top-nav-collapse) {
+    background: rgba(255, 255,255, 0.3);
+    display: flex;
+  }
+  
+  
+  @media (max-width: 765px) {
+    .navbar:not(.top-nav-collapse) {
+      background: #a1a7cf !important;
+    }
+    .navbar:not(.top-nav-collapse) a {
+        color: rgb(85, 77, 77) !important;
+      }
+    .navbar:not(.top-nav-collapse) button {
+    color: white !important;
+    }
+    #collapseButton{
+        border:none;
+        color:white;
+    }
+    #languageButton button{
+        width: 40%;
+        left:25%;
+        border-radius: 7px;
+        border-width: 2px;
+        border-color: white;
+        margin: 3px;
+    }
+  
+  } 
+  

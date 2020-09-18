@@ -1,0 +1,102 @@
+.bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top:0;
+    background-attachment: fixed;
+  }
+
+  html,
+  body,
+  header,
+  .view {
+    height: 100%;
+  }
+   
+  .top-nav-collapse {
+    background-color: #a1a7cf !important;
+  }
+  
+  .navbar:not(.top-nav-collapse) {
+    background: rgba(255, 255,255, 0.3);
+    display: flex;
+
+  }
+
+
+  @media (max-width: 765px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #a1a7cf !important;
+    }
+
+    .navbar:not(.top-nav-collapse) a {
+        color: rgb(85, 77, 77) !important;
+      }
+
+    .navbar:not(.top-nav-collapse) button {
+    color: white !important;
+    }
+
+    #collapseButton{
+        border:none;
+        color:white;
+    }
+
+    #languageButton button{
+        width: 40%;
+        left:25%;
+        border-radius: 7px;
+        border-width: 2px;
+        border-color: white;
+        margin: 3px;
+    }
+
+  } 
+  
+  @media (max-width: 450px){
+    #logo{
+    width: 200px;
+    height:200px;
+    }
+  }
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-text {
+    color: #ffffff;
+}
+
+.card {
+    margin: auto;     
+}
+
+.card-deck{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+} 
+
+.card a {
+    margin-top:auto; 
+    background-color:#a1a7cf;
+    border-radius:8px;
+    border:none;
+    color: #ffffff;
+    cursor: pointer;    
+    position: absolute;
+    bottom:20px;
+}
+.card-img-overlay{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}

@@ -1,0 +1,160 @@
+.bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top:0;
+    background-attachment: fixed;
+  }
+
+  html,
+  body,
+  header,
+  .view {
+    height: 100%;
+  }
+
+
+   
+  .top-nav-collapse {
+    background-color: #a1a7cf !important;
+  }
+  
+  .navbar:not(.top-nav-collapse) {
+    background: rgba(255, 255,255, 0.3);
+    display: flex;
+
+  }
+
+
+  @media (max-width: 765px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #a1a7cf !important;
+    }
+
+    .navbar:not(.top-nav-collapse) a {
+        color: rgb(85, 77, 77) !important;
+      }
+
+    .navbar:not(.top-nav-collapse) button {
+    color: white !important;
+    }
+
+    #collapseButton{
+        border:none;
+        color:white;
+    }
+
+    #languageButton button{
+        width: 40%;
+        left:25%;
+        border-radius: 7px;
+        border-width: 2px;
+        border-color: white;
+        margin: 3px;
+    }
+
+  } 
+  
+  @media (max-width: 450px){
+    #logo{
+    width: 200px;
+    height:200px;
+    }
+  }
+  
+.card{
+    border-radius: 10px;
+    margin:10px;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+  @media (min-width: 1100px){
+    .card{
+      margin-left:170px;
+      margin-right:170px;
+    }
+  }
+
+.card .img{
+    width: 50%;
+    object-fit: fill;
+    width:200px;
+}
+
+@media (max-width: 450px){
+  .card .img{
+    width:150px;
+  }
+  .card{
+    margin-left:15px;
+    margin-right:15px;
+  }
+    
+  .facebook-icon,
+  .instagram-icon{
+      width: 20px;
+      height: 20px;
+
+  }
+}
+
+@media (max-width: 370px){
+  .card .img{
+    width:100px;
+  }
+      
+  .card{
+    margin-left:5px;
+    margin-right:5px;
+  }
+}
+
+.facebook-icon,
+.instagram-icon{
+    margin-top: .625em;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+
+    filter: alpha(opacity=80); 
+}
+
+.facebook-icon:hover,
+.instagram-icon:hover{
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+} 
+
+/*  */
+.comment-wrapper {
+  display: flex;
+  padding-top: 60px;
+  
+}
+
+.comment-wrapper .panel{
+  min-width: 70%;
+  padding-left:100px;
+
+}
+.comment-wrapper .planel-heading h1{
+  padding: 100px;
+}
+.comment-wrapper .panel-body {
+  max-height:650px;
+  margin:auto;
+}
+
+.comment-wrapper .media-list .media a i {
+  padding-right: 10px;
+}
+
+.comment-wrapper .media-list .media {
+  border-bottom:1px dashed #efefef;
+  margin-bottom:25px;
+}

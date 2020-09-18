@@ -1,0 +1,125 @@
+.bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top:0;
+    background-attachment: fixed;
+  }
+
+  html,
+  body,
+  header,
+  .view {
+    height: 100%;
+  }
+   
+  .top-nav-collapse {
+    background-color: #a1a7cf !important;
+  }
+  
+  .navbar:not(.top-nav-collapse) {
+    background: rgba(255, 255,255, 0.3);
+    display: flex;
+
+  }
+
+
+  @media (max-width: 765px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #a1a7cf !important;
+    }
+
+    .navbar:not(.top-nav-collapse) a {
+        color: rgb(85, 77, 77) !important;
+      }
+
+    .navbar:not(.top-nav-collapse) button {
+    color: white !important;
+    }
+
+    #collapseButton{
+        border:none;
+        color:white;
+    }
+
+    #languageButton button{
+        width: 40%;
+        left:25%;
+        border-radius: 7px;
+        border-width: 2px;
+        border-color: white;
+        margin: 3px;
+    }
+
+  } 
+  
+  @media (max-width: 450px){
+    #logo{
+    width: 200px;
+    height:200px;
+    }
+  }
+  
+.comment-wrapper {
+  display: flex;
+  padding-top: 60px;
+  margin-left:100px;
+
+}
+
+.comment-wrapper .panel{
+  min-width: 70%;
+  padding-left:100px;
+
+}
+.comment-wrapper .planel-heading h1{
+  padding: 100px;
+}
+.comment-wrapper .panel-body {
+  max-height:650px;
+  margin:auto;
+}
+
+.comment-wrapper .media-list .media a i {
+  padding-right: 10px;
+}
+
+.comment-wrapper .media-list .media {
+  border-bottom:1px dashed #efefef;
+  margin-bottom:25px;
+}
+
+.container{
+  display: flex;
+
+}
+
+.container iframe{
+  margin:auto;
+}
+
+
+#gallery{
+  display:flex;
+  /* margin-left: 12%;
+  margin-right: 15%; */
+  margin-top:50px;
+  margin:80px;
+}
+
+#gallery img{
+  width:250px;
+  height:250px; 
+  object-fit:cover;
+
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(105, 82, 206));
+
+}
+
+#gallery #img-group{
+  margin:auto;
+}
